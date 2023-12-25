@@ -3,11 +3,11 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Loading the saved models
-diabetes_model = pickle.load(open('C:/Users/Sahu Suraj/Videos/MachineLearning/Machine Learning5/diabetes_model.sav','rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
 
-heart_model = pickle.load(open('C:/Users/Sahu Suraj/Videos/MachineLearning/Machine Learning5/heart_model.sav','rb'))
+heart_model = pickle.load(open('heart_model.sav','rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/Sahu Suraj/Videos/MachineLearning/Machine Learning5/parkinsons_model.sav','rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
 
 # Sidebar for navigation
 with st.sidebar:
