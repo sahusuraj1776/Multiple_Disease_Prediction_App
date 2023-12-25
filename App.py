@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-from streamlit_option_menu import option_menu
+from streamlit_option_menu as som
 
 # Loading the saved models
 diabetes_model = pickle.load(open('C:/Users/Sahu Suraj/Videos/MachineLearning/Machine Learning5/diabetes_model.sav','rb'))
@@ -11,7 +11,7 @@ parkinsons_model = pickle.load(open('C:/Users/Sahu Suraj/Videos/MachineLearning/
 
 # Sidebar for navigation
 with st.sidebar:
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = som.option_menu('Multiple Disease Prediction System',
                            ['Diabetes Prediction',
                             'Heart Disease Prediction',
                             'Parkinson\'s Prediction'],
