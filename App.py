@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-from streamlit_option_menu as som
+import streamlit.option_menu as som
 
 # Loading the saved models
 diabetes_model = pickle.load(open('C:/Users/Sahu Suraj/Videos/MachineLearning/Machine Learning5/diabetes_model.sav','rb'))
