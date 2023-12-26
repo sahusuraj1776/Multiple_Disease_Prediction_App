@@ -123,7 +123,7 @@ if selected == 'Parkinson\'s Prediction':
     with col1:
         JitterABs = st.number_input('MDVP: Jitter(Abs) (0.000007 - 0.000260)',value=None,format="%.6f")
     with col2:
-        RAP = st.number_input('MDVP: RAP (00.0068 - 0.02144)',value=None,format="%.6f")
+        RAP = st.number_input('MDVP: RAP (0.00068 - 0.02144)',value=None,format="%.6f")
     with col3:
         PPQ = st.number_input('MDVP: PPQ (0.00092 - 0.01958)',value=None,format="%.6f")
     with col4:
@@ -161,7 +161,7 @@ if selected == 'Parkinson\'s Prediction':
     parkinsons_diagnosis = ''
     
     # Creating a button for prediction
-    if st.button("Heart Disease Test Result"):
+    if st.button("Parkinson's Test Result"):
         parkinsons_prediction = parkinsons_model.predict([[Fo,Fhi,Flo,JitterPercent,JitterABs,RAP,PPQ,DDP,Shimmer,ShimmerDB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])
         if(parkinsons_prediction[0]==1):
             parkinsons_diagnosis = "The person have parkinson\'s Disease."
